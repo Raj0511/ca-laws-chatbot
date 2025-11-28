@@ -1,0 +1,81 @@
+# --- Core Framework ---
+fastapi
+uvicorn[standard]       # ASGI server to run the app
+python-multipart        # Required for Form data (login forms) & File uploads
+
+# --- Database (MongoDB) ---
+motor                   # Async Python driver for MongoDB
+beanie                  # ODM (Object Document Mapper) - The best choice for FastAPI + Mongo
+
+# --- Configuration & Validation ---
+pydantic>=2.0.0
+pydantic-settings       # For managing .env variables securely
+python-dotenv           # To load the .env file
+email-validator         # For Pydantic's EmailStr validation
+
+# --- Security & Authentication ---
+# --- Core Framework ---
+fastapi
+uvicorn[standard]       # ASGI server to run the app
+python-multipart        # Required for Form data (login forms) & File uploads
+
+# --- Database (MongoDB) ---
+motor                   # Async Python driver for MongoDB
+beanie                  # ODM (Object Document Mapper) - The best choice for FastAPI + Mongo
+
+# --- Configuration & Validation ---
+pydantic>=2.0.0
+pydantic-settings       # For managing .env variables securely
+python-dotenv           # To load the .env file
+email-validator         # For Pydantic's EmailStr validation
+
+# --- Security & Authentication ---
+python-jose[cryptography] # For generating and verifying JWT tokens
+# --- Core Framework ---
+fastapi
+uvicorn[standard]       # ASGI server to run the app
+python-multipart        # Required for Form data (login forms) & File uploads
+
+# --- Database (MongoDB) ---
+motor                   # Async Python driver for MongoDB
+beanie                  # ODM (Object Document Mapper) - The best choice for FastAPI + Mongo
+
+# --- Configuration & Validation ---
+pydantic>=2.0.0
+pydantic-settings       # For managing .env variables securely
+python-dotenv           # To load the .env file
+email-validator         # For Pydantic's EmailStr validation
+
+# --- Security & Authentication ---
+# --- Core Framework ---
+fastapi
+uvicorn[standard]       # ASGI server to run the app
+python-multipart        # Required for Form data (login forms) & File uploads
+
+# --- Database (MongoDB) ---
+motor                   # Async Python driver for MongoDB
+beanie                  # ODM (Object Document Mapper) - The best choice for FastAPI + Mongo
+
+# --- Configuration & Validation ---
+pydantic>=2.0.0
+pydantic-settings       # For managing .env variables securely
+python-dotenv           # To load the .env file
+email-validator         # For Pydantic's EmailStr validation
+
+# --- Security & Authentication ---
+python-jose[cryptography] # For generating and verifying JWT tokens
+passlib[bcrypt]           # For hashing passwords securely
+bcrypt==4.0.1
+
+# --- AI & Vector Operations ---
+openai                  # Official OpenAI client
+langchain==0.3.7      # Framework for chaining LLM operations
+langchain-community     # Community integrations for LangChain
+langchain-huggingface   # Hugging Face integrations for LangChain
+langchain-google-genai  # Google GenAI integration for LangChain
+langchain-groq          # Groq integration for LangChain
+# langchain-openai      # (Optional) If you want the specific LangChain wrapper
+# chromadb              # (Optional) If you run a local vector store later. Remove if using Mongo Atlas Search.
+
+# --- HTTP Client ---
+httpx                   # Async HTTP client (needed if your backend calls other APIs)

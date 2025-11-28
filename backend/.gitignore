@@ -1,0 +1,32 @@
+# Environment files
+.env
+*.env
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Cache & Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Vectorstores / indexes
+faiss_index/
+
+# Logs
+*.log
+
+# IDE folders
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local runtime files
+*.sqlite3
+*.db
