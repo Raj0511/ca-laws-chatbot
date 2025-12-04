@@ -792,8 +792,11 @@
 
     <script>
         // --- CONFIGURATION ---
-        const API_URL = "https://ai-chatbot-backend-latest-1.onrender.com/api/v1";
-        const WS_URL = "wss://ai-chatbot-backend-latest-1.onrender.com/api/v1/ws";
+        const API_URL = "https://backend-6-7b3c.onrender.com/api/v1";
+        // const API_URL = "http://localhost:8000/api/v1";
+        const WS_URL = "wss://backend-6-7b3c.onrender.com/api/v1/ws/chat/ws";
+        // const WS_URL = "ws://localhost:8000/api/v1/ws/chat/ws";
+
 
 
         // --- STATE ---
@@ -1042,7 +1045,8 @@
         function connectWebSocket(chatId) {
             if (state.socket) state.socket.close();
 
-            const wsUrl = `${WS_URL}/ws/${chatId}?token=${state.token}`;
+            // Correct WebSocket URL (Render requires wss://)
+            const wsUrl = `${WS_URL}/${chatId}?token=${state.token}`;
             state.socket = new WebSocket(wsUrl);
 
             state.socket.onopen = () => {
@@ -1066,6 +1070,7 @@
                 }
             };
         }
+
 
         function sendMessage() {
             const text = els.msgInput.value.trim();
